@@ -16,4 +16,14 @@ public class Produto
 		this.dataDeFabricaçao = dataDeFabricaçaoProduto;
 	}
 
+	public String getNome()
+	{
+		return this.nome;
+	}
+
+	public int getPreço() 
+	{
+		return this.preço;
+	}
+
 }
