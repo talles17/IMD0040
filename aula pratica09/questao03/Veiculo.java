@@ -11,4 +11,12 @@ public class Veiculo
 		this.modelo = modeloVeiculo;
 		this.placa = placaVeiculo;
 	}
+
+	public String getMarca(){return this.marca;}
+
+	public String getModelo(){return this.modelo;}
+
+	public String getPlaca(){return this.placa;}
+
+	
 }

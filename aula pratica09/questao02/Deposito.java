@@ -39,9 +39,10 @@ public class Deposito
 	public void maiorValor()
 	{
 		if(produtos.size() > 0){
-			String maxProduto;
+			String maxProduto = "";
 			double maxValor = 0;
 			for (Produto p : produtos) { 
+				//System.out.println(p.getNome());
 				if(p.getPreço() > maxValor){
 					maxProduto = p.getNome();
 					maxValor = p.getPreço();
