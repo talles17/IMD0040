@@ -1,12 +1,12 @@
 public class Produto
 {
 	private String nome;
-	private float preço;
+	private double preço;
 	private String marca;
 	private String descriçao;
 	private String dataDeFabricaçao;
 
-	public Produto (String nomeProduto, float preçoProduto, String marcaProduto,
+	public Produto (String nomeProduto, double preçoProduto, String marcaProduto,
 				    String descriçaoProduto, String dataDeFabricaçaoProduto) 
 	{
 		this.nome = nomeProduto;
@@ -21,7 +21,7 @@ public class Produto
 		return this.nome;
 	}
 
-	public int getPreço() 
+	public double getPreço() 
 	{
 		return this.preço;
 	}

@@ -1,23 +1,13 @@
+import java.util.LinkedList;
+
 public class Deposito 
 {
 	private LinkedList<Produto> produtos;
-	/*private LinkedList<Livro> Livros;
-	private LinkedList<Celular> Celulares;
-	private LinkedList<Pizza> Pizzas;
-	private LinkedList<Refrigerante> Refrigerantes;
-	private LinkedList<Chocolate> Chocolates;
-*/
+	
+	
 	public Deposito()
 	{
-		/*private LinkedList<Carro> Carros = new LinkedList<Carro>();
-		private LinkedList<Livro> Livros = new LinkedList<Livro>();
-		private LinkedList<Celular> Celulares = new LinkedList<Celular>();
-		private LinkedList<Pizza> Pizzas = new LinkedList<Pizza>();
-		private LinkedList<Refrigerante> Refrigerantes = new LinkedList<Refrigerante>();
-		private LinkedList<Chocolate> Chocolates = new LinkedList<Chocolate>();
-	*/
 		produtos = new LinkedList<Produto>();
-
 	}
 
 	public void adicionarProdutos(Produto produto)
@@ -48,25 +38,30 @@ public class Deposito
 
 	public void maiorValor()
 	{
-
+		if(produtos.size() > 0){
+			String maxProduto;
+			double maxValor = 0;
+			for (Produto p : produtos) { 
+				if(p.getPreço() > maxValor){
+					maxProduto = p.getNome();
+					maxValor = p.getPreço();
+				}
+			}
+			System.out.println("O produto de maior valor no deposito é o " + maxProduto);
+			
+			/*String maxProduto;
+			double maxValor = 0;
+			produtos.forEach((temp) -> {
+				if(temp.getPreço() > maxValor){
+					maxProduto = temp.getNome();
+					maxValor = temp.getPreço();
+				}		
+			}); */		
+		}
+		else {
+			System.out.println("O deposito está vazio.");
+		}
 	}
 
-	public static void main (String[] args)
-	{
-		Deposito dep1 = new Deposito();
-
-		Carro carro1 = new Carro("Siena", 40000, "Fiat", "Carro sedan da fiat.", "2015", "Metal", "Sedan", "4 portas");
-		dep1.adicionarProdutos(carro1);
-
-		Pizza pizza1 = new Pizza("Pizza", 9.50, "Sadia", "Pizza da Sadia", "20/03/2018", "20/04/2018",
-								 "Alimento congelado", "Quatro Queijos", 8);
-		dep1.adicionarProdutos(pizza1);
-
-		Livro livro1 = new Livro("Senhor dos Aneis", 48.50, "Editora", "Livro sobre a trilogia do senhor dos aneis.",
-								 "20/03/2018", "folha", "Infinita", "tolkien", 900);
-		dep1.adicionarProdutos(livro1);
-
-		System.out.println("Quantidade de produtos: " +dep1.quantidadeDeProdutos());
-	}
 
 }

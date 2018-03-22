@@ -3,7 +3,7 @@ public class Refrigerante extends ProdutoNaoDuravel
 	private String sabor;
 	private String quantidade;
 
-	public Refrigerante(String nomeProduto, float preçoProduto, String marcaProduto, String descriçaoProduto,
+	public Refrigerante(String nomeProduto, double preçoProduto, String marcaProduto, String descriçaoProduto,
 				 		String dataDeFabricaçaoProduto, String data, String generoProduto, String saborRefri,
 				 		String quantidadeRefri)
 	{

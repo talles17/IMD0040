@@ -3,7 +3,7 @@ public class Celular extends ProdutoDuravel
 	private String processador;
 	private String memoria;
 
-	public Celular(String nomeProduto, float preçoProduto, String marcaProduto,String descriçaoProduto,
+	public Celular(String nomeProduto, double preçoProduto, String marcaProduto,String descriçaoProduto,
 				 String dataDeFabricaçaoProduto, String mpp, String durabilidadeProduto, 
 				 String processadorCel, String memoriaCel)
 	{
