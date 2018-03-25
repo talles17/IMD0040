@@ -18,7 +18,7 @@ public class Locavel
 	{
 		Scanner entrada = new Scanner(System.in);
 		String tipoVeiculo;
-		System.out.println("Digite qual veiculo você quer cadastrar(carro ou moto): ");
+		System.out.println("Digite qual veiculo você quer (carro ou moto): ");
 		tipoVeiculo = entrada.next();
 		return tipoVeiculo;
 	}
@@ -30,14 +30,60 @@ public class Locavel
 
 	public void alugarVeiculo()
 	{
-		String nome, numCarteira;
-		System.out.println("Digite seu nome: ");
-		nome = entrada.nextLine();
-		System.out.println("Digite o numero da sua carteira de motorista: ");		
-		numCarteira = entrada.nextLine();
-
-		
+		String veiculo = tipoDoVeiculo();
+		if (veiculo.equals("carro")){
+			alugarCarro();
+		}
+		else if (veiculo.equals("moto")){
+			alugarMoto();
+		}	
+		else {
+			System.out.println("Tipo de veiculo não aceito.");
+		}
 	}
+
+	public void alugarCarro() 
+	{
+		String nome, numCarteira, carro;
+		System.out.println("Digite o modelo do carro que você deseja alugar: ");
+		carro = entrada.nextLine();
+		for(Veiculo v : veiculosCadas){
+			if(v instanceof Carro){	
+				if(((Carro)v).getModelo() == carro){
+					System.out.println("Digite seu nome: ");
+					nome = entrada.nextLine();
+					((Carro)v).setNomeAlugador(nome);
+					System.out.println("Digite o numero da sua carteira de motorista: ");		
+					numCarteira = entrada.nextLine();
+					((Carro)v).setCarteiraAlugador(numCarteira);
+					((Carro)v).setTrueAlugado();
+					veiculosAlugados.add(v);
+				}
+			}
+		}		
+	}
+
+	public void alugarMoto() 
+	{
+		String nome, numCarteira, moto;
+		System.out.println("Digite o modelo da moto que você deseja alugar: ");
+		moto = entrada.nextLine();
+		for(Veiculo v : veiculosCadas){
+			if(v instanceof Moto){	
+				if(((Moto)v).getModelo() == moto){
+					System.out.println("Digite seu nome: ");
+					nome = entrada.nextLine();
+					((Moto)v).setNomeAlugador(nome);
+					System.out.println("Digite o numero da sua carteira de motorista: ");		
+					numCarteira = entrada.nextLine();
+					((Moto)v).setCarteiraAlugador(numCarteira);
+					((Moto)v).setTrueAlugado();
+					veiculosAlugados.add(v);	
+				}
+			}
+		}	
+	}
+
 	public void cadastrarVeiculo()
 	{
 		String veiculo = tipoDoVeiculo();
@@ -88,6 +134,23 @@ public class Locavel
 				((Moto)v).print();
 			}
 		}
+	}
+
+	public void exibirVeiculosAlugados()
+	{
+		for(Veiculo v : veiculosAlugados){
+			if(v instanceof Carro){	
+				((Carro)v).print();			
+			}
+			if(v instanceof Moto){
+				((Moto)v).print();
+			}
+		}
+	}
+
+	public void imprimirRecibo()
+	{
+		
 	}
 
 }

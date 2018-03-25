@@ -28,7 +28,7 @@ public class Main
 				case 0: break;
 
 				case 1: locadora.cadastrarVeiculo();	
-
+						break;
 				case 2: locadora.exibirVeiculosCadastrados();
 						break;
 				
