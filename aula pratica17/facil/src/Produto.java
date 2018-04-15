@@ -2,20 +2,20 @@ public abstract class Produto
 {
 	private String id;
 	private String nome;
-	private double preço;
+	private double preÃ§o;
 	private String marca;
-	private String descriçao;
-	private String dataDeFabricaçao;
+	private String descriÃ§ao;
+	private String dataDeFabricaÃ§ao;
 
-	public Produto (String idProduto, String nomeProduto, double preçoProduto, String marcaProduto,
-				    String descriçaoProduto, String dataDeFabricaçaoProduto) 
+	public Produto (String idProduto, String nomeProduto, double preÃ§oProduto, String marcaProduto,
+				    String descriÃ§aoProduto, String dataDeFabricaÃ§aoProduto) 
 	{
 		this.id = idProduto;
 		this.nome = nomeProduto;
-		this.preço = preçoProduto;
+		this.preÃ§o = preÃ§oProduto;
 		this.marca = marcaProduto;
-		this.descriçao = descriçaoProduto;
-		this.dataDeFabricaçao = dataDeFabricaçaoProduto;
+		this.descriÃ§ao = descriÃ§aoProduto;
+		this.dataDeFabricaÃ§ao = dataDeFabricaÃ§aoProduto;
 	}
 
 	public String getNome()
@@ -23,15 +23,15 @@ public abstract class Produto
 		return this.nome;
 	}
 
-	public double getPreço() 
+	public double getPreÃ§o() 
 	{
-		return this.preço;
+		return this.preÃ§o;
 	}
 
 	public void imprimeProduto()
 	{
-		System.out.print("id: " + this.id + " Nome: " + this.nome + " Preço: " + this.preço + " Marca: " + this.marca +
-						   " Descriçao: " + this.descriçao + " Data de fabricaçao: " + this.dataDeFabricaçao);
+		System.out.print("id: " + this.id + " Nome: " + this.nome + " PreÃ§o: " + this.preÃ§o + " Marca: " + this.marca +
+						   " DescriÃ§ao: " + this.descriÃ§ao + " Data de fabricaÃ§ao: " + this.dataDeFabricaÃ§ao);
 	}
 	
 	public abstract boolean disponivelParaVenda();

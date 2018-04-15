@@ -3,13 +3,19 @@ public class Livro extends ProdutoDuravel
 	private String autor;
 	private int paginas;
 
-	public Livro(String nomeProduto, double preçoProduto, String marcaProduto,String descriçaoProduto,
-				 String dataDeFabricaçaoProduto, String mpp, String durabilidadeProduto, 
+	public Livro(String idProduto, String nomeProduto, double preÃ§oProduto, String marcaProduto,String descriÃ§aoProduto,
+				 String dataDeFabricaÃ§aoProduto, String mpp, String durabilidadeProduto, boolean avaria, 
 				 String autorLivro, int paginasLivro)
 	{
-		super(nomeProduto,preçoProduto,marcaProduto,descriçaoProduto,dataDeFabricaçaoProduto,
-			  mpp,durabilidadeProduto);
+		super(idProduto, nomeProduto,preÃ§oProduto,marcaProduto,descriÃ§aoProduto,dataDeFabricaÃ§aoProduto,
+			  mpp,durabilidadeProduto,avaria);
 		this.autor = autorLivro;
 		this.paginas = paginasLivro;
+	}
+	
+	
+	public boolean eletronico() 
+	{
+		return false;
 	}
 }

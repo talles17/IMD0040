@@ -3,10 +3,10 @@ public class Pizza extends ProdutoNaoDuravel
 	private String sabor;
 	private int fatias;
 
-	public Pizza(String nomeProduto, double preçoProduto, String marcaProduto, String descriçaoProduto,
-				 String dataDeFabricaçaoProduto, String data, String generoProduto, String saborPizza, int fatiasPizza)
+	public Pizza(String idProduto, String nomeProduto, double preÃ§oProduto, String marcaProduto, String descriÃ§aoProduto,
+				 String dataDeFabricaÃ§aoProduto, String data, String generoProduto, String saborPizza, int fatiasPizza)
 	{
-		super(nomeProduto,preçoProduto,marcaProduto,descriçaoProduto,dataDeFabricaçaoProduto,
+		super(idProduto, nomeProduto,preÃ§oProduto,marcaProduto,descriÃ§aoProduto,dataDeFabricaÃ§aoProduto,
 			  data,generoProduto);
 		this.sabor = saborPizza;
 		this.fatias = fatiasPizza;

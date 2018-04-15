@@ -3,10 +3,10 @@ public class ProdutoNaoDuravel extends Produto
 	private String dataDeValidade;
 	private String genero;
 
-	public ProdutoNaoDuravel(String idProduto, String nomeProduto, double preçoProduto, String marcaProduto, String descriçaoProduto,
-							 String dataDeFabricaçaoProduto, String data, String generoProduto)
+	public ProdutoNaoDuravel(String idProduto, String nomeProduto, double preÃ§oProduto, String marcaProduto, String descriÃ§aoProduto,
+							 String dataDeFabricaÃ§aoProduto, String data, String generoProduto)
 	{
-		super(idProduto, nomeProduto,preçoProduto,marcaProduto,descriçaoProduto,dataDeFabricaçaoProduto);
+		super(idProduto, nomeProduto,preÃ§oProduto,marcaProduto,descriÃ§aoProduto,dataDeFabricaÃ§aoProduto);
 		this.dataDeValidade = data;
 		this.genero = generoProduto;
 	}
@@ -18,7 +18,17 @@ public class ProdutoNaoDuravel extends Produto
 		System.out.print(" Data de Validade: " + this.dataDeValidade + " Genero: " + this.genero);
 	}
 	
-	public boolean disponivelParaVenda(String data)
+	public boolean disponivelParaVenda()
+	{
+		if(estaNaValidade("13/04/2018")) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	public boolean estaNaValidade(String data)
 	{
 		String[] valoresHoje = data.split("/");
 		String[] valoresValidade = this.dataDeValidade.split("/");

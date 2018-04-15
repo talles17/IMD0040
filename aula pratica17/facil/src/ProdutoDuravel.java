@@ -4,10 +4,10 @@ public abstract class ProdutoDuravel extends Produto
 	private String durabilidade;
 	private boolean avaria;
 
-	public ProdutoDuravel(String idProduto, String nomeProduto, double preçoProduto, String marcaProduto,String descriçaoProduto,
-						  String dataDeFabricaçaoProduto, String mpp, String durabilidadeProduto, boolean avariaProduto)
+	public ProdutoDuravel(String idProduto, String nomeProduto, double preÃ§oProduto, String marcaProduto,String descriÃ§aoProduto,
+						  String dataDeFabricaÃ§aoProduto, String mpp, String durabilidadeProduto, boolean avariaProduto)
 	{
-		super(idProduto, nomeProduto,preçoProduto,marcaProduto,descriçaoProduto,dataDeFabricaçaoProduto);
+		super(idProduto, nomeProduto,preÃ§oProduto,marcaProduto,descriÃ§aoProduto,dataDeFabricaÃ§aoProduto);
 		this.materialPredom = mpp;
 		this.durabilidade = durabilidadeProduto;
 		this.avaria = avariaProduto;

@@ -2,10 +2,10 @@ public class Chocolate extends ProdutoNaoDuravel
 {
 	private String sabor;
 
-	public Chocolate(String nomeProduto, double preçoProduto, String marcaProduto, String descriçaoProduto,
-				 	String dataDeFabricaçaoProduto, String data, String generoProduto, String saborChoco)
+	public Chocolate(String idProduto, String nomeProduto, double preÃ§oProduto, String marcaProduto, String descriÃ§aoProduto,
+				 	String dataDeFabricaÃ§aoProduto, String data, String generoProduto, String saborChoco)
 	{
-		super(nomeProduto,preçoProduto,marcaProduto,descriçaoProduto,dataDeFabricaçaoProduto,
+		super(idProduto, nomeProduto,preÃ§oProduto,marcaProduto,descriÃ§aoProduto,dataDeFabricaÃ§aoProduto,
 			  data,generoProduto);
 		this.sabor = saborChoco;
 	}

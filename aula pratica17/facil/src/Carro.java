@@ -3,13 +3,17 @@ public class Carro extends ProdutoDuravel
 	private String estilo;
 	private String portas;
 
-	public Carro(String nomeProduto, double preçoProduto, String marcaProduto,String descriçaoProduto,
-				 String dataDeFabricaçaoProduto, String mpp, String durabilidadeProduto, 
+	public Carro(String idProduto, String nomeProduto, double preÃ§oProduto, String marcaProduto,String descriÃ§aoProduto,
+				 String dataDeFabricaÃ§aoProduto, String mpp, String durabilidadeProduto, boolean avaria, 
 				 String estiloCarro, String portasCarro)
 	{
-		super(nomeProduto,preçoProduto,marcaProduto,descriçaoProduto,dataDeFabricaçaoProduto,
-			  mpp,durabilidadeProduto);
+		super(idProduto, nomeProduto,preÃ§oProduto,marcaProduto,descriÃ§aoProduto,dataDeFabricaÃ§aoProduto,
+			  mpp,durabilidadeProduto, avaria);
 		this.estilo = estiloCarro;
 		this.portas = portasCarro;
+	}
+	
+	public boolean eletronico() {
+		return false;
 	}
 }

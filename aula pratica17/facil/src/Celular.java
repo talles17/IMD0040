@@ -3,11 +3,11 @@ public class Celular extends ProdutoDuravel
 	private String processador;
 	private String memoria;
 
-	public Celular(String nomeProduto, double preçoProduto, String marcaProduto,String descriçaoProduto,
-				 String dataDeFabricaçaoProduto, String mpp, String durabilidadeProduto, 
+	public Celular(String nomeProduto, double preÃ§oProduto, String marcaProduto,String descriÃ§aoProduto,
+				 String dataDeFabricaÃ§aoProduto, String mpp, String durabilidadeProduto, 
 				 String processadorCel, String memoriaCel)
 	{
-		super(nomeProduto,preçoProduto,marcaProduto,descriçaoProduto,dataDeFabricaçaoProduto,
+		super(nomeProduto,preÃ§oProduto,marcaProduto,descriÃ§aoProduto,dataDeFabricaÃ§aoProduto,
 			  mpp,durabilidadeProduto);
 		this.processador = processadorCel;
 		this.memoria = memoriaCel;

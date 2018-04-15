@@ -43,9 +43,9 @@ public class Deposito
 			double maxValor = 0;
 			for (Produto p : produtos) { 
 				//System.out.println(p.getNome());
-				if(p.getPreço() > maxValor){
+				if(p.getPreÃ§o() > maxValor){
 					maxProduto = p.getNome();
-					maxValor = p.getPreço();
+					maxValor = p.getPreÃ§o();
 				}
 			}
 			System.out.println("O produto de maior valor no deposito Ã© o " + maxProduto);
@@ -53,9 +53,9 @@ public class Deposito
 			/*String maxProduto;
 			double maxValor = 0;
 			produtos.forEach((temp) -> {
-				if(temp.getPreço() > maxValor){
+				if(temp.getPreÃ§o() > maxValor){
 					maxProduto = temp.getNome();
-					maxValor = temp.getPreço();
+					maxValor = temp.getPreÃ§o();
 				}		
 			}); */		
 		}

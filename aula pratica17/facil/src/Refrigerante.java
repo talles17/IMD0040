@@ -3,11 +3,11 @@ public class Refrigerante extends ProdutoNaoDuravel
 	private String sabor;
 	private String quantidade;
 
-	public Refrigerante(String nomeProduto, double preçoProduto, String marcaProduto, String descriçaoProduto,
-				 		String dataDeFabricaçaoProduto, String data, String generoProduto, String saborRefri,
+	public Refrigerante(String idProduto, String nomeProduto, double preÃ§oProduto, String marcaProduto, String descriÃ§aoProduto,
+				 		String dataDeFabricaÃ§aoProduto, String data, String generoProduto, String saborRefri,
 				 		String quantidadeRefri)
 	{
-		super(nomeProduto,preçoProduto,marcaProduto,descriçaoProduto,dataDeFabricaçaoProduto,
+		super(idProduto, nomeProduto,preÃ§oProduto,marcaProduto,descriÃ§aoProduto,dataDeFabricaÃ§aoProduto,
 			  data,generoProduto);
 		this.sabor = saborRefri;
 		this.quantidade = quantidadeRefri;
