@@ -5,7 +5,10 @@ public class Circulo extends Forma {
 
 	private float raio;
 	
-
+	public Circulo(float r) {
+		this.raio = r;
+	}
+	
 	public float calcularArea() {
 		return (float)Math.PI * (raio * raio);
 	}
