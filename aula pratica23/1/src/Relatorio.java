@@ -12,7 +12,7 @@ public class Relatorio {
 		entrada = new Scanner(System.in);
 	}
 	
-	void addPessoa() throws IOException  {
+	void addPessoa() throws Exception {
 		String linha = entrada.nextLine();
 		String[] dados = linha.split("-");
 		
@@ -26,14 +26,29 @@ public class Relatorio {
 			idade = Integer.parseInt(dados[1]);
 			estadoCivil = dados[2].charAt(2);
 			aceitacao = Integer.parseInt(dados[3]);
-		} catch (nome.length() > 50 || nome.lenght() < 5) {
-			System.out.println("O nome deve conter de 5 a 50 caracteres." + e);
-			
-		} catch (IllegalArgumentException e) {
-			System.out.println("O nome nÃ£o pode conter nÃºmeros." + e);
+			if (dados[0].length() < 5 || dados[0].length() > 50) {
+				throw new Exception("O nome deve conter de 5 a 50 caracteres.");
+			}
+			if (nome.matches("[0-9]+")) {
+				throw new Exception("O nome não pode conter números.");
+			}
+			if (idade < 0 || idade > 127) {
+				throw new Exception("A idade deve ser um inteiro entre 0 a 127.");
+			}
+			if (dados[2].length() > 1) {
+				throw new Exception("Informe Estado civil com somente um caracter.");
+			}
+			if (estadoCivil != 'S' || estadoCivil != 'C' || estadoCivil != 'V' || estadoCivil != 'D') {
+				throw new Exception("Opção inválida no Estado Civil");
+			}
+			if (aceitacao < 0 || aceitacao > 10) {
+				throw new Exception("O grau de aceitação deve ser entre 0 a 10.");
+			}
+		} finally {
+			Pessoa p = new Pessoa(nome, idade, estadoCivil, aceitacao);
+			l.add(p); 
 		}
-		Pessoa p = new Pessoa(nome, idade, estadoCivil, aceitacao);
-		l.add(p); 
+		
 		
 	}
 	

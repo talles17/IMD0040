@@ -9,6 +9,6 @@ public class Pessoa {
 	}
 	
 	public void print() {
-		System.out.println("ads");
+		System.out.println(nome + " - " + idade);
 	}
 }

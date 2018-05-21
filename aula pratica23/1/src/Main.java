@@ -16,7 +16,7 @@ public class Main {
 			r.addPessoa();
 		}
 		
-		try {
+		/*try {
 			out = new PrintWriter("output.txt");
 			for (int i = 0; i < num; i++) {
 				out.print("Média de idade: ");
@@ -36,7 +36,7 @@ public class Main {
 			if (out != null) {
 				out.close();
 			}
-		}
+		} */
 		
 		
 	}
