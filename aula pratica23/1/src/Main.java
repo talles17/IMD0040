@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		Relatorio r = new Relatorio();
 		PrintWriter out = null;
@@ -16,27 +16,27 @@ public class Main {
 			r.addPessoa();
 		}
 		
-		/*try {
+		try {
 			out = new PrintWriter("output.txt");
-			for (int i = 0; i < num; i++) {
-				out.print("Média de idade: ");
-				out.println(r.mediaIdade());
-				out.print("Percentual de solteiros: ");
-				out.println(r.percentualSolteiros());
-				out.print("Percentual de casados: : ");
-				out.println(r.percentualCasados());
-				out.print("Percentual de viuvos: ");
-				out.println(r.percentualViuvos());
-				out.print("Percentual de divorciados: ");
-				out.println(r.percentualDivorciados());
-				out.print("Média do grau de aceitação: ");
-				out.println(r.mediaAceitacao());
-			}
+			
+			out.print("Média de idade: ");
+			out.println(r.mediaIdade());
+			out.print("Percentual de solteiros: ");
+			out.println(r.percentualSolteiros());
+			out.print("Percentual de casados: : ");
+			out.println(r.percentualCasados());
+			out.print("Percentual de viuvos: ");
+			out.println(r.percentualViuvos());
+			out.print("Percentual de divorciados: ");
+			out.println(r.percentualDivorciados());
+			out.print("Média do grau de aceitação: ");
+			out.println(r.mediaAceitacao());
+			
 		}finally {
 			if (out != null) {
 				out.close();
 			}
-		} */
+		} 
 		
 		
 	}

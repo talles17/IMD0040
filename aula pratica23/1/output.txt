@@ -1,1 +1,30 @@
-Média de idade: 
+Média de idade: 39.0
+Percentual de solteiros: 20.0
+Percentual de casados: : 40.0
+Percentual de viuvos: 20.0
+Percentual de divorciados: 20.0
+Média do grau de aceitação: 7.0
+Média de idade: 39.0
+Percentual de solteiros: 20.0
+Percentual de casados: : 40.0
+Percentual de viuvos: 20.0
+Percentual de divorciados: 20.0
+Média do grau de aceitação: 7.0
+Média de idade: 39.0
+Percentual de solteiros: 20.0
+Percentual de casados: : 40.0
+Percentual de viuvos: 20.0
+Percentual de divorciados: 20.0
+Média do grau de aceitação: 7.0
+Média de idade: 39.0
+Percentual de solteiros: 20.0
+Percentual de casados: : 40.0
+Percentual de viuvos: 20.0
+Percentual de divorciados: 20.0
+Média do grau de aceitação: 7.0
+Média de idade: 39.0
+Percentual de solteiros: 20.0
+Percentual de casados: : 40.0
+Percentual de viuvos: 20.0
+Percentual de divorciados: 20.0
+Média do grau de aceitação: 7.0
